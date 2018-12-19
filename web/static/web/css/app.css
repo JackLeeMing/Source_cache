@@ -1,0 +1,28 @@
+body{
+    background: rgba(42, 55, 72,0.6)!important;
+    /*background: rgba(0,0,0,0.2);*/
+}
+/* datatable 样式重构*/
+.dataTable{
+    display:table;
+    margin-bottom:0px;
+}
+.table{
+    width:100%!important;
+    margin-bottom:0px;
+    /*table-layout:fixed;*/
+}
+.dataTable thead > tr > th {
+    color: #fff;
+}
+.dataTables_scrollBody{
+    margin-top:-3px;
+    /*min-height: 510px;*/
+}
+.dataTables_scrollHeadInner{
+    width: 100%!important;
+    padding-right:0px!important;
+}
+.dataTables_wrapper{
+    margin-bottom: 0px;
+}
