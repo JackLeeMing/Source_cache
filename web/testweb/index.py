@@ -16,7 +16,7 @@ class BaseHandler(ContextHandler,tornado.web.RequestHandler):
     pass
 
 
-@url(r"/")
+@url(r"/sdsdsds/dsdsds")
 class IndexHandler(BaseHandler):
     """ 获取所有单元测试, 并可以按树状查看"""
     def get(self):

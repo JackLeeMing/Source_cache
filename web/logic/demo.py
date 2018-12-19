@@ -427,7 +427,7 @@ class CurvePreview(BaseHandler):
 		self.render('drawer.html')
 
 
-@url(r'/all/curve/preview')
+@url(r'/')
 class CurveAllPreview(BaseHandler):
 	"""docstring for CurvePreview"""
 	def get(self):
