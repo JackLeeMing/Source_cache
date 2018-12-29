@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4种不同风格jQuery自定义tab选项卡特效</title>
+
+<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+<link rel='stylesheet' href='static/css/jquery.cardtabs.css'>
+<link rel='stylesheet' href='static/css/demo.css'>
+<style type="text/css" media="screen">
+</style>
+
+</head>
+<body class='markdown-body'>
+<div class="container" style="width:960px;height:600px;background:#fff;margin:20px auto;padding:20px;">
+		<h3>Graygreen 主题</h3>
+		<div class='example'>
+			<div class='tabsholder3'>
+				<div data-tab="风机功率图(Bachmann)">
+					<iframe name="myiframe" id="myrame" src="/curve/bachmann" frameborder="0" align="left" width="100%" height="100%" scrolling="yes">
+				</div>
+				<div data-tab="风机功率图(ABBGT)">
+					<iframe name="myiframe" id="myrame" src="/curve/abbgt" frameborder="0" align="left" width="100%" height="100%" scrolling="yes">
+				</div>
+			</div>
+		</div>
+</div>
+
+<script src="static/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='static/js/jquery.cardtabs.js'></script>
+<script type='text/javascript'>
+		$('.tabsholder1').cardTabs();
+		$('.tabsholder2').cardTabs({theme: 'inset'});
+		$('.tabsholder3').cardTabs({theme: 'graygreen'});
+		$('.tabsholder4').cardTabs({theme: 'wiki'});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>源清慧虹科技</p>
+<p>Smartbow</p>
+</div>
+</body>
+</html>

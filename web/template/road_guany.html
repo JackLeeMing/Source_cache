@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>风机</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/jquery-ui-1.10.3.full.min.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.css" />
+    <link rel="stylesheet" href="/static/css/tree.css" />
+    <link rel="stylesheet" href="/static/css/chosen.css">
+    <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/small-screen.css" media="screen and (max-width: 1366px)">
+<style>
+ul {
+  padding: 0;
+}
+iframe {
+    width: 100%;
+    height: 870px;
+    border: none;
+    overflow-x: hidden;
+}
+body {
+  min-width: 1024px;
+  overflow-x: auto;
+}
+#panel-toolbox {
+    width: 252px;
+}
+#panel-toolbox {
+  position: absolute;
+  z-index: 9999;
+}
+.ckbox label:before {
+    top:4px;
+}
+#imgs .btn-group {
+  margin-top: 5px;
+}
+#tab-report {
+  padding: 10px;
+}
+#tab-report iframe {
+  width: 100%;
+  height: 846px;
+}
+#report-enter .dropdown-menu a {
+  background: #fff;
+}
+#report-enter .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #428bca;
+  outline: 0;
+}
+.nav-tabs {
+  margin-top: 6px;
+  border:none;
+}
+.nav-tabs>li>a {
+  padding: 6px;
+}
+#tab-report {
+  background: #fff;
+}
+.nav-tabs>li>a {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.widget-box {
+  border-bottom: none;
+}
+
+  .widget-toolbar {
+    display: inline-block;
+    padding: 0 0px;
+    line-height: 37px;
+    float: left;
+    position: relative;
+  }
+
+@media screen and (max-width: 1190px){
+  .widget-toolbar {
+    display: inline-block;
+    padding: 0 0px;
+    line-height: 37px;
+    float: left;
+    position: relative;
+  }
+  .dropdown{
+    clear: both;
+    margin-top: 3px;
+  }
+  .dropdown-menu.pull-right{
+      right: 0;
+      left: 1px;
+  }
+}
+
+</style>
+</head>
+<body class='markdown-body'>
+<div id="right-pane">
+      <div class="widget-box transparent">
+          <div class="widget-header">
+              <div class="widget-toolbar no-border">
+                  <ul class="nav nav-tabs">
+                      <li>
+                          <a data-toggle="tab" href="#tab-basic" target="_blanks" class="tab-basic">风机功率图(Bachmann)</a>
+                      </li>
+                      <li>
+                          <a data-toggle="tab" href="#tab-road" target="_blanks" class="tab-xunj">风机功率图(ABBGT)</a>
+                      </li>
+
+                     <li>
+                          <a data-toggle="tab" href="#tab-basic1" target="_blanks" class="tab-basic"></a>
+                      </li>
+                      <li>
+                          <a data-toggle="tab" href="#tab-road1" target="_blanks" class="tab-xunj"></a>
+                      </li>
+
+                        <li>
+                          <a data-toggle="tab" href="#tab-basic2" target="_blanks" class="tab-basic"></a>
+                      </li>
+                      <li>
+                          <a data-toggle="tab" href="#tab-road2" target="_blanks" class="tab-xunj"></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+      <div class="widget-body">
+            <div class="tab-content" style="height:870px">
+                <div class="tab-pane" id="tab-basic">
+                    <iframe url="/curve/bachmann">
+                    </iframe>
+                </div>
+                <div class="tab-pane" id="tab-road">
+                    <iframe url="/curve/abbgt">
+                    </iframe>
+                </div>
+            </div>
+      </div>
+  </div>
+
+<script src="/static/js/jquery-1.10.2.min.js"></script>
+<script src="/static/js/jquery-ui-1.10.3.full.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/kpages.js"></script>
+
+<script src="/static/data/smarturl.js"></script>
+<script src="/static/data/smartdata.js"></script>
+<script src="/static/js/helper/util.js"></script>
+<script src="/static/js/chosen.jquery.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/smart_select.js"></script>
+<script src="/static/js/modules/myroad.js"></script>
+
+  <script>
+$(function() {
+
+    function load_tab(tab){
+      console.error(tab);
+        if(tab.indexOf('#')<0){
+          tab = "#"+tab;
+        }
+
+        var iframe = $(tab).find('iframe');
+        $(iframe).attr('src',$(iframe).attr('url'));
+        $('a[href=' + tab + ']').tab('show');
+        util.setCookie('roadguanyTabType', tab.split('-')[1]);
+    }
+
+    $('.nav-tabs li a').click(function(){
+      var tab = $(this).attr('href');
+      console.log(tab);
+      load_tab(tab);
+    });
+
+    load_tab("#tab-basic");
+})
+</script>
+</body>
+</html>
+
+

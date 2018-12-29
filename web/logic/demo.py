@@ -420,6 +420,19 @@ class DataListHandlerww(BaseHandler):
 		self.write(dict(data=data))
 
 
+@url(r'/curve/abbgt')
+class CurveABBGTPreview(BaseHandler):
+	"""docstring for CurvePreview"""
+	def get(self):
+		self.render('ABBGT.html')
+
+
+@url(r'/curve/bachmann')
+class CurveBachmannPreview(BaseHandler):
+	"""docstring for CurvePreview"""
+	def get(self):
+		self.render('Bachmann.html')
+
 @url(r'/curve/preview')
 class CurvePreview(BaseHandler):
 	"""docstring for CurvePreview"""
@@ -427,12 +440,18 @@ class CurvePreview(BaseHandler):
 		self.render('drawer.html')
 
 
+@url(r'/fix')
+class CurveAll2Preview(BaseHandler):
+	"""docstring for CurvePreview"""
+	def get(self):
+		self.render('road_guany.html')
+
+
 @url(r'/')
 class CurveAllPreview(BaseHandler):
 	"""docstring for CurvePreview"""
 	def get(self):
-		self.render('gupload.html')
-
+		self.render('drawer.html')
 
 @url(r"/update")
 class UpdateToken(BaseHandler):

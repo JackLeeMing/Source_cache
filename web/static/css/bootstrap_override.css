@@ -1,0 +1,46 @@
+.badge-success {
+	background-color: #1CAF9A;
+}
+
+.badge {
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   font-weight: normal;
+   font-size: 11px;
+   vertical-align: middle;
+   display: inline-block;
+}
+
+
+.badge-danger,
+.btn-default .badge-danger{
+	background-color: #D9534F
+}
+
+.headermenu .btn {
+	border: 0px;
+}
+
+.panel-group .panel-heading+.panel-collapse .panel-body{
+	border-top: 1px dotted rgba(255,255,255,0.05);
+	margin-top: 5px;
+}
+
+.panel-collapse .panel-body li {
+	border-bottom: 1px dotted rgba(255,255,255,0.05);
+	margin-top: 5px;
+}
+
+.row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+@media (min-width: 400px){
+	.form-horizontal .control-label {
+	  padding-top: 7px;
+	  margin-bottom: 0;
+	  text-align: right;
+	}	
+}

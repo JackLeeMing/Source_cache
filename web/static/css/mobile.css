@@ -1,0 +1,8 @@
+@media screen and (max-width: 700px) {
+    .mob-hide {
+        display: none;
+    }
+    .mob-hr {
+        display: block;
+    }
+}

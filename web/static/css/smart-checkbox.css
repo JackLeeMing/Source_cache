@@ -1,0 +1,15 @@
+.checkbox-label{
+    height: 27px;
+    min-width: 73px;
+    width: auto;
+    line-height: 21px;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 7px;
+    margin-right: 6px;
+    cursor: pointer;
+    display: inline-block;
+}
+.checkbox-label[class*=selected] {
+    background-color: #82af6f!important;
+}

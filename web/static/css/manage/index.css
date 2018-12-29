@@ -1,0 +1,403 @@
+.row {
+    overflow: hidden;
+}
+.progress-sm {
+    height: 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.progress {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.sublabel {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.subtitle {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+.infocard {
+    float: left;
+    margin-left: 1%;
+    margin-right: 0px;
+    padding: 8px;
+    height: auto;
+    width: 32.23%;
+    background-color: #FFF;
+    margin-bottom: 6px;
+}
+#bridge-card {
+    margin-left: 10px;
+}
+.infocard .logo {
+    font-size: 56px;
+    padding-top: 6px;
+    padding-left: 6px;
+    float: left;
+    height: auto;
+    height: 72px;
+    width: 75px;
+}
+.infocard .up {
+    width: 100%;
+    line-height: : 50px;
+    float: left;
+}
+.infocard .bottom {
+    float: left;
+    line-height: 30px
+}
+.infocard .up strong {
+    width: 100%;
+    font-size: 21px;
+    margin-left: 10px;
+}
+.infocard .up .text {
+    position: relative;
+}
+.infocard .bottom {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+}
+.infocard .text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.infocard .icon-user {
+    padding-left: 9px;
+}
+.infocard .icon-bug {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+/*.infocard .label-success {
+    background-color: #1caf9a!important;
+}
+.infocard .text {
+    background-color: #59a866!important;
+}*/
+.infocard .text, .infocard .text span {
+    line-height: 17px;
+    font-size: 22px;
+}
+#btns-content .selected {
+    background-color: #eee!important;
+    font-weight:700;
+}
+#bars .progress {
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+#bars {
+    margin-top: 21px;
+}
+.panel-default {
+    border:none;
+}
+.btn-group>.btn-sm, .btn-group+.btn-sm {
+    border-width: 1px;
+}
+.btn-group>.btn, .btn-group+.btn {
+    border:none;
+}
+.btn-group>.btn-middle {
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+.dropdown-toggle .icon {
+    border-left: 1px solid #aaa;
+    padding-left: 8px;
+}
+#nutrition-chart {
+    margin-top: -30px;
+}
+#btns-time, #dingj-time, #xunj-time {
+    position: relative;
+    top: 5px;
+}
+#modal-bars-detail table {
+    width: 100%;
+}
+#modal-bars-detail .modal-header .close {
+    position: relative;
+    top: -10px;
+}
+li {
+    list-style-type:none;
+}
+i {
+    font-style: normal;
+}
+.ge-modal {
+    cursor: pointer;
+}
+.ge-modal:hover {
+    background-color: #eee;
+}
+#graph-bridge-count {
+    margin-top: 56px;
+}
+a,a:hover{ text-decoration:none; color:#636E7B}
+#modal-bars-detail .modal-dialog {
+    width: 1000px;
+}
+#modal-bars-detail .modal-body {
+    height: 700px;
+}
+.modal-body .icon {
+    font-size: 183px;
+    display: block;
+    margin-top: -130px;
+}
+.modal-body .text {
+    font-size: 20px;
+    display: block;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+#btns-content button {
+    background-color: #fff;
+    margin-left: 0;
+}
+#tip {
+    text-align: center;
+}
+.page-content >  div {
+    padding-left: 0;
+}
+#popover-detail td:hover {
+    color:#A74343;
+}
+#nutrition-chart>div {
+    margin-left: 0!important;
+}
+.ge-modal .title {
+    height: 15px;
+    overflow: hidden;
+    display: block;
+}
+#nutrition-chart-text{
+    margin-top: 25px;
+    height: 21px;
+}
+#nutrition-chart-text, #qiaolfb-chart-text, #daolfb-chart-text {
+    text-align: center; 
+    font-weight:700;
+}
+#dingjian-tab li, #dingj-time li {
+    cursor: pointer;
+}
+#xunjian-tab li, #xunj-time li {
+    cursor: pointer;
+}
+#type-list, #xunj-type-list{
+    min-height: 45px;
+}
+#type-list li, #xunj-type-list li{
+    margin-right: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+#type-list .active, #xunj-type-list .active{
+    background-color: #5cb85c;
+}
+#xunj-widget table .name {
+    color: #428BCA;
+    cursor: pointer;
+}
+#modal-xunjian .modal-dialog{
+    width: 900px;
+}
+.widget-toolbar {
+    float:right!important;
+}
+.widget-header h4 {
+    float: left;
+}
+#btns-company, #btns-flag {
+    top: 4px;
+    left: 5px;
+}
+.btn-middle {
+    margin-left: 0;
+}
+.gx, .gy {
+    cursor: pointer;
+    color: #669FC7;
+}
+
+.panel-stat {
+    margin-bottom: 6px;
+}
+
+#module-card-0 {
+    padding-right: 13px;
+}
+
+#module-card-0 > div {
+    padding-right: 0;
+}
+
+.smartmodule .widget-main {
+    min-height: 250px;
+}
+
+.widget-box {
+    margin-bottom: 6px;
+}
+
+#qiaolfb-chart-text #daolfb-chart-text {
+    position: relative; 
+    top: -70px;
+}
+/*defferent screen*/
+@media screen and (min-width: 1500px) {
+    .bottom > div {
+        display: inline-block;
+    }
+    .bottom {
+        padding-left: 11px!important;
+    }
+    .bottom .text {
+        display: inline-block;
+    }
+    .infocard .bottom > div {
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 1216px) and (max-width: 1500px) {
+    .infocard .up strong {
+        margin-left: 0;
+    }
+    .bottom > div {
+        display: block;
+        width: 100%;
+    }
+    .bottom > div .text{
+        float: right;
+        margin-right: 45px;
+    }
+    .infocard .up, .infocard .bottom{
+        width: 100%;
+    }
+    .infocard{
+        height: 138px;
+        width: 32.1%;
+    }
+    .infocard .up .text {
+        margin-right: 45px;
+        float: right;
+    }
+    .infocard .bottom strong {
+        left: 10px;
+    }
+    .infocard .text, .infocard .text span {
+        position: relative;
+        top: 4px;
+    }
+
+     .infocard .up .text span{
+        top:0;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1720px) {
+    .infocard {
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .infocard {
+        width: 100%;
+    }
+    .bottom > div {
+        display: inline-block;
+    }
+    .bottom {
+        padding-left: 11px!important;
+    }
+    .infocard .bottom > div {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #module-card-0 > div {
+        /*width: 50%;*/
+    }
+}
+@media screen and (min-width: 1850px) {
+    #module-card-0 .panel-heading {
+        height: auto;
+    }
+}
+#xunj-type-list .label, #type-list .label {
+    font-size: 100%;
+    margin-bottom: 4px;
+}
+.tab-content > div {
+    padding: 0;
+}
+.tab-content table {
+    margin-bottom: 0;
+}
+#addon {
+    height:200px;
+}
+.stat-label {
+    font-size: 100%;
+}
+.detail .stat-label {
+    display: inline-block;
+    height: 18px;
+    overflow: hidden;
+}
+#addon, iframe {
+    width: 100%;
+    border: none;
+    height: 500px;
+}
+#tr-dingjian:hover {
+    background: #ddd;
+}
+.smartmodule select{
+    width: 150px;
+}
+.man {
+    color: #428BCA;
+}
+select.active {
+    border-color: #555;
+}
+.table th {
+    padding-left: 3px!important;
+}
+@media screen (min-width: 1399px) {
+    .hiddens {
+        display: none;
+    }
+}
