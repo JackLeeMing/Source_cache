@@ -447,6 +447,12 @@ class CurveAll2Preview(BaseHandler):
 		self.render('road_guany.html')
 
 
+@url(r'/gold')
+class CurveJF2Preview(BaseHandler):
+	"""docstring for CurvePreview"""
+	def get(self):
+		self.render('jf.html')
+
 @url(r'/')
 class CurveAllPreview(BaseHandler):
 	"""docstring for CurvePreview"""
