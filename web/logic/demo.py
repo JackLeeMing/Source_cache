@@ -451,7 +451,7 @@ class CurveAll2Preview(BaseHandler):
 class CurveJF2Preview(BaseHandler):
 	"""docstring for CurvePreview"""
 	def get(self):
-		self.render('jf.html')
+		self.render('jf_sp.html')
 
 @url(r'/')
 class CurveAllPreview(BaseHandler):
